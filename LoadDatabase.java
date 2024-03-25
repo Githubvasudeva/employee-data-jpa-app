@@ -1,8 +1,7 @@
-package com.example.employeedata.db;
-
-import com.example.employeedata.EmployeeDataJpaApplication;
-import com.example.employeedata.bean.Employee;
-import com.example.employeedata.repository.EmployeeRepository;
+package com.example.accessingdatajpa.db;
+import com.example.accessingdatajpa.EmployeeDataJpaApplication;
+import com.example.accessingdatajpa.bean.Employee;
+import com.example.accessingdatajpa.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

@@ -1,5 +1,8 @@
-package com.example.employeedata.validator;
+package com.example.accessingdatajpa.validator;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 public class EmployeeValidator {
@@ -11,14 +14,20 @@ public EmployeeValidator(){
         return pattern.matcher(phone).matches();
 
     }
-    public boolean isdobValid(String dob){
-        //validations to add - todo
+    public boolean isDojValid(String doj){
+        SimpleDateFormat date= new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            date.parse(doj);
+        } catch (ParseException e) {
+            return false;
+        }
+
         return true;
     }
 
     public boolean isEmailValid(String email){
-        //validations to add - todo
-        return true;
+        Pattern pattern = Pattern.compile("^(.+)@(.+)$");
+        return pattern.matcher(email).matches();
     }
 
 }

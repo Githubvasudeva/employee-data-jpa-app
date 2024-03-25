@@ -1,4 +1,4 @@
-package com.example.employeedata.bean;
+package com.example.accessingdatajpa.bean;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -12,7 +12,7 @@ public class EmployeeTax {
 	private String lastName;
 
 	private long yearlySalary;
-
+	private long taxableAmount;
 	private long taxAmount;
 	private long cessAmount;
 
@@ -24,8 +24,16 @@ public class EmployeeTax {
 		this.employeeId = employeeId;
 	}
 
+	public String getFirstName() {
+		return firstName;
+	}
+
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
@@ -38,6 +46,14 @@ public class EmployeeTax {
 
 	public void setYearlySalary(long yearlySalary) {
 		this.yearlySalary = yearlySalary;
+	}
+
+	public long getTaxableAmount() {
+		return taxableAmount;
+	}
+
+	public void setTaxableAmount(long taxableAmount) {
+		this.taxableAmount = taxableAmount;
 	}
 
 	public long getTaxAmount() {
@@ -58,11 +74,12 @@ public class EmployeeTax {
 
 	public EmployeeTax() {}
 
-	public EmployeeTax(long employeeId, String firstName, String lastName,long yearlySalary,long taxAmount,long cessAmount) {
+	public EmployeeTax(long employeeId, String firstName, String lastName,long yearlySalary,long taxableAmount,long taxAmount,long cessAmount) {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.yearlySalary = yearlySalary;
+		this.taxableAmount = taxableAmount;
 		this.taxAmount = taxAmount;
 		this.cessAmount = cessAmount;
 	}
