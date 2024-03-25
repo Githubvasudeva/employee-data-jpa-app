@@ -1,4 +1,4 @@
-package com.example.employeedata.exceptions;
+package com.example.accessingdatajpa.exceptions;
 
 public class InvalidEmployeeDataException extends RuntimeException {
     private String message;

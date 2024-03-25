@@ -1,4 +1,4 @@
-package com.example.employeedata.bean;
+package com.example.accessingdatajpa.bean;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

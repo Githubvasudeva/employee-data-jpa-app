@@ -1,6 +1,6 @@
-package com.example.employeedata.repository;
+package com.example.accessingdatajpa.repository;
 
-import com.example.employeedata.bean.Employee;
+import com.example.accessingdatajpa.bean.Employee;
 import org.springframework.data.repository.CrudRepository;
 
 
