@@ -1,0 +1,41 @@
+12:15:45 AM: Executing ':EmployeeDataJpaApplication.main()'...
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+Connected to the target VM, address: 'localhost:50120', transport: 'socket'
+
+> Task :EmployeeDataJpaApplication.main()
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2024-03-26T00:15:58.213+05:30  INFO 10724 --- [           main] c.e.a.EmployeeDataJpaApplication         : Starting EmployeeDataJpaApplication using Java 22 with PID 10724 (C:\Users\NAIDU\Documents\gs-accessing-data-jpa-main\initial\build\classes\java\main started by NAIDU in C:\Users\NAIDU\Documents\gs-accessing-data-jpa-main)
+2024-03-26T00:15:58.222+05:30  INFO 10724 --- [           main] c.e.a.EmployeeDataJpaApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-03-26T00:16:01.339+05:30  INFO 10724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-26T00:16:01.520+05:30  INFO 10724 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 1 JPA repository interface.
+2024-03-26T00:16:03.892+05:30  INFO 10724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-26T00:16:03.929+05:30  INFO 10724 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-26T00:16:03.931+05:30  INFO 10724 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-03-26T00:16:04.145+05:30  INFO 10724 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-26T00:16:04.149+05:30  INFO 10724 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5758 ms
+2024-03-26T00:16:04.631+05:30  INFO 10724 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-26T00:16:05.382+05:30  INFO 10724 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4bab2dae-a207-4866-8794-3b0b17459c08 user=SA
+2024-03-26T00:16:05.387+05:30  INFO 10724 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-26T00:16:05.588+05:30  INFO 10724 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-26T00:16:05.954+05:30  INFO 10724 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-03-26T00:16:06.102+05:30  INFO 10724 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-26T00:16:07.031+05:30  INFO 10724 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-26T00:16:10.205+05:30  INFO 10724 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-26T00:16:10.286+05:30  INFO 10724 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-26T00:16:11.215+05:30  WARN 10724 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-26T00:16:12.297+05:30  INFO 10724 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-26T00:16:12.326+05:30  INFO 10724 --- [           main] c.e.a.EmployeeDataJpaApplication         : Started EmployeeDataJpaApplication in 15.63 seconds (process running for 17.47)
+2024-03-26T00:16:20.469+05:30  INFO 10724 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-26T00:16:20.470+05:30  INFO 10724 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-26T00:16:20.476+05:30  INFO 10724 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
